@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Tungsten plugin for Craft CMS
+ *
+ * TungstenCraftResources Widget Settings
+ *
+ * @author    Tungsten Creative
+ * @copyright Copyright (c) 2018 Tungsten Creative
+ * @link      http://atomic74.com
+ * @package   Tungsten
+ * @since     2
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("tungsten\\tungsten\\assetbundles\\tungsten\\TungstenAsset") %}
+
+{{ forms.textField({
+    label: 'Message',
+    instructions: 'Enter a message here.',
+    id: 'message',
+    name: 'message',
+    value: widget['message']})
+}}

@@ -1,0 +1,36 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Tungsten plugin for Craft CMS
+ *
+ * TungstenCraftResources Widget Body
+ *
+ * @author    Tungsten Creative
+ * @copyright Copyright (c) 2018 Tungsten Creative
+ * @link      http://atomic74.com
+ * @package   Tungsten
+ * @since     2
+ */
+#}
+
+<p>
+  <strong><a href="https://thenewline.zendesk.com/hc/en-us/requests/new" target="_blank">Submit Support Ticket</a></strong><br>
+  Ask us a question about your website or the CMS.
+</p>
+<p>
+  <strong><a href="https://my.thenewline.com" target="_blank">My Newline</a></strong><br>
+  View your billing details, manage your organization contacts and mailboxes.
+</p>
+{% if settings.tcgTrainingVideosUrl is not empty %}
+  <p>
+    <strong><a href="{{ settings.tcgTrainingVideosUrl }}" target="_blank">Training Videos</a></strong><br>
+    Refresh your Craft CMS knowledge with a personalized training review playlist.
+  </p>
+{% endif %}
+{% if settings.tcgNotes is not empty %}
+  <hr>
+  <h2>Notes from Tungsten</h2>
+  <div class="tcg-notes">
+    {{ settings.tcgNotes | markdown }}
+  </div>
+{% endif %}

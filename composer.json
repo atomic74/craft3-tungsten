@@ -1,0 +1,40 @@
+{
+    "name": "tungsten/tungsten",
+    "description": "Miscellaneous goodies needed for Tungsten Craft projects",
+    "version": "2.0.0",
+    "type": "craft-plugin",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "tungsten"
+    ],
+    "support": {
+        "docs": "https://github.com/ohlincik/tungsten/blob/master/README.md",
+        "issues": "https://github.com/ohlincik/tungsten/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tungsten Creative",
+            "homepage": "http://atomic74.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "tungsten\\tungsten\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Tungsten",
+        "handle": "tungsten",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/ohlincik/tungsten/master/CHANGELOG.md",
+        "class": "tungsten\\tungsten\\Tungsten"
+    }
+}

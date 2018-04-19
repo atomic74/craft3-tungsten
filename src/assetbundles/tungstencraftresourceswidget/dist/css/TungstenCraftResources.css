@@ -1,0 +1,21 @@
+/**
+ * Tungsten plugin for Craft CMS
+ *
+ * TungstenCraftResources Widget CSS
+ *
+ * @author    Tungsten Creative
+ * @copyright Copyright (c) 2018 Tungsten Creative
+ * @link      http://atomic74.com
+ * @package   Tungsten
+ * @since     2
+ */
+
+ .tcg-notes h3 {
+   border-bottom: solid 1px rgba(251, 176, 52, .5);;
+   padding-bottom: .3em;
+   margin: 1.7em 0 .5em;
+ }
+ .tcg-notes ul {
+   list-style: outside;
+   margin-left: 1em;
+ }
