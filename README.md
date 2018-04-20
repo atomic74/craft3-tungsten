@@ -18,7 +18,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require ohlincik/tungsten
+        composer require tungsten/tungsten:2.*
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Tungsten.
 
@@ -38,7 +38,7 @@ This section allows to provide customized notes intended as a reference for anyo
 
 This variable is used to select the appropriate CSS or JS file to be included in the templates.
 
-    <!-- Custom styles for this template -->
+    {# Custom styles for this template #}
     <link href="{{ craft.tungsten.assetUrl('styles.css') }}" rel="stylesheet">
 
     {# Custom Js Files #}

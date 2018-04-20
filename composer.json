@@ -11,8 +11,8 @@
         "tungsten"
     ],
     "support": {
-        "docs": "https://github.com/ohlincik/tungsten/blob/master/README.md",
-        "issues": "https://github.com/ohlincik/tungsten/issues"
+        "docs": "https://github.com/ohlincik/craft3-tungsten/blob/master/README.md",
+        "issues": "https://github.com/ohlincik/craft3-tungsten/issues"
     },
     "license": "MIT",
     "authors": [
@@ -34,7 +34,7 @@
         "handle": "tungsten",
         "hasCpSettings": true,
         "hasCpSection": false,
-        "changelogUrl": "https://raw.githubusercontent.com/ohlincik/tungsten/master/CHANGELOG.md",
+        "changelogUrl": "https://raw.githubusercontent.com/ohlincik/craft3-tungsten/master/CHANGELOG.md",
         "class": "tungsten\\tungsten\\Tungsten"
     }
 }
