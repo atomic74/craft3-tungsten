@@ -8,5 +8,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 - Migrate the plugin to Craft 3
 
-### Removed
-- Redactor styling adjustment for Notes in Control Panel (this may be added back after a decision is made whether to keep Redactor or switch to CKEditor)
+### Changed
+- Redactor styling adjustment for Notes in Control Panel (this is currently not working properly. The asset bundle that should accomplish this is included but is not currently working in Control Panel.)
