@@ -41,8 +41,7 @@ class TungstenVariable
             // Return the cached version of the asset file
             $manifest = json_decode(file_get_contents($manifestFilePath), true);
             return $appDirUrl.$manifest[$filename];
-        }
-        else {
+        } else {
             // Return the develoment version of the asset file
             return $appDirUrl.$filename;
         }

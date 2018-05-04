@@ -9,3 +9,14 @@
  * @package   Tungsten
  * @since     2
  */
+
+.redactor-dropdown-format .redactor-dropdown-item-note {
+    color: #999;
+    font-style: italic;
+}
+
+.redactor- p.note {
+    color: #999;
+    font-size: .9em;
+    font-style: italic;
+}
