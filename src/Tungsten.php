@@ -13,6 +13,7 @@ namespace tungsten\tungsten;
 use tungsten\tungsten\variables\TungstenVariable;
 use tungsten\tungsten\models\Settings;
 use tungsten\tungsten\widgets\TungstenCraftResources as TungstenCraftResourcesWidget;
+use tungsten\tungsten\assetbundles\tungsten\TungstenAsset;
 
 use Craft;
 use craft\base\Plugin;
@@ -96,6 +97,11 @@ class Tungsten extends Plugin
             ),
             __METHOD__
         );
+
+        // Include the Redactor style adjustments for CP requests
+        if (Craft::$app->getRequest()->isCpRequest) {
+            Craft::$app->getView()->registerAssetBundle(TungstenAsset::class);
+        }
     }
 
     // Protected Methods
