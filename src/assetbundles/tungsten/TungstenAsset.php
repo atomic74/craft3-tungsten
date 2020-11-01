@@ -8,7 +8,7 @@
  * @copyright Copyright (c) 2018 Tungsten Creative
  */
 
-namespace tungsten\tungsten\assetbundles\Tungsten;
+namespace tungsten\tungsten\assetbundles\tungsten;
 
 use Craft;
 use craft\web\AssetBundle;
