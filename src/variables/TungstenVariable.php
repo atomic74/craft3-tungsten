@@ -13,6 +13,7 @@ namespace tungsten\tungsten\variables;
 use tungsten\tungsten\Tungsten;
 
 use Craft;
+use craft\helpers\App;
 
 /**
  * @author    Tungsten Creative
@@ -31,9 +32,9 @@ class TungstenVariable
     public function assetUrl($filename = null)
     {
         $fileSystemPath = CRAFT_BASE_PATH;
-        $siteUrl = Craft::$app->config->general->siteUrl;
+        $siteUrl = App::env('PRIMARY_SITE_URL');
         $appDirPath = $fileSystemPath.'/web/app/';
-        $appDirUrl = $siteUrl.'app/';
+        $appDirUrl = $siteUrl.'/app/';
         $manifestFilePath = $appDirPath.'rev-manifest.json';
         $assetFilePath = $appDirPath.$filename;
 

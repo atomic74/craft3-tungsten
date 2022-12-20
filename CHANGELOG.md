@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## 3.0.0 - 2022-12-20
+### Changed
+- Update compatibility to Craft 4.x
+
 ## 2.0.3 - 2020-11-01
 ### Fixed
 - Fix Composer 2 compatibility issue related to PSR-4 autoloading standard
