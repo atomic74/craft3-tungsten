@@ -37,7 +37,7 @@
         "hasCpSection": false,
         "developer": "Tungsten Creative Group",
         "developerUrl": "https://www.atomic74.com",
-        "documentationUrl": "https://github.com/ohlincik/craft3-tungsten/blob/master/README.md",
+        "documentationUrl": "https://github.com/atomic74/craft3-tungsten/blob/master/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/atomic74/craft3-tungsten/master/CHANGELOG.md",
         "class": "tungsten\\tungsten\\Tungsten"
     }

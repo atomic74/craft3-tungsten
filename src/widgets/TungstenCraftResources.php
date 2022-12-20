@@ -48,7 +48,7 @@ class TungstenCraftResources extends Widget
     /**
      * @inheritdoc
      */
-    public static function maxColspan()
+    public static function maxColspan(): ?int
     {
         return null;
     }
@@ -59,7 +59,7 @@ class TungstenCraftResources extends Widget
     /**
      * @inheritdoc
      */
-    public function getBodyHtml()
+    public function getBodyHtml(): ?string
     {
         Craft::$app->getView()->registerAssetBundle(TungstenCraftResourcesWidgetAsset::class);
 

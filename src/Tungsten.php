@@ -16,6 +16,7 @@ use tungsten\tungsten\widgets\TungstenCraftResources as TungstenCraftResourcesWi
 use tungsten\tungsten\assetbundles\tungsten\TungstenAsset;
 
 use Craft;
+use craft\base\Model;
 use craft\base\Plugin;
 use craft\services\Plugins;
 use craft\events\PluginEvent;
@@ -42,14 +43,6 @@ class Tungsten extends Plugin
      * @var Tungsten
      */
     public static $plugin;
-
-    // Public Properties
-    // =========================================================================
-
-    /**
-     * @var string
-     */
-    public $schemaVersion = '2';
 
     // Public Methods
     // =========================================================================
@@ -110,19 +103,20 @@ class Tungsten extends Plugin
     /**
      * @inheritdoc
      */
-    protected function createSettingsModel()
+    protected function createSettingsModel(): ?Model
     {
-        return new Settings();
+        return Craft::createObject(Settings::class);
     }
 
     /**
      * @inheritdoc
      */
-    protected function settingsHtml(): string
+    protected function settingsHtml(): ?string
     {
         return Craft::$app->view->renderTemplate(
             'tungsten/settings',
             [
+                'plugin' => $this,
                 'settings' => $this->getSettings()
             ]
         );
