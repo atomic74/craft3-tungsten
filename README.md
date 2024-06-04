@@ -1,4 +1,4 @@
-# Tungsten plugin for Craft CMS 3.x
+# Tungsten plugin for Craft CMS 5.x
 
 This plugin allows to add a widget to the dashboard that includes some useful links and resources. It also ties the Gulp JS and CSS workflow into the Craft template.
 
@@ -6,7 +6,7 @@ This plugin allows to add a widget to the dashboard that includes some useful li
 
 ## Requirements
 
-This plugin requires Craft CMS 3.0.0 or later.
+This plugin requires Craft CMS 5.0.0 or later.
 
 ## Installation
 
@@ -18,7 +18,7 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require tungsten/tungsten:2.*
+        composer require tungsten/tungsten:4.*
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Tungsten.
 

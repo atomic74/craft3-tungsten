@@ -1,7 +1,7 @@
 {
     "name": "tungsten/tungsten",
     "description": "Miscellaneous goodies needed for Tungsten Craft projects",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "type": "craft-plugin",
     "keywords": [
         "craft",
@@ -22,8 +22,8 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "craftcms/cms": "^4.0.0"
+        "php": "^8.2",
+        "craftcms/cms": "^5.0.0"
     },
     "autoload": {
         "psr-4": {
